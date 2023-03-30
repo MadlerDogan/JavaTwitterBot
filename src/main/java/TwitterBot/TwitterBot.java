@@ -28,8 +28,7 @@ public class TwitterBot {
         //password
         String password="pws";
 
-            // Assign each item in the list to the string variable
-            keys = tag + "   " +list.get(count);
+
 
             System.setProperty("chromeDriver", "src/main/resources/drivers/chromedriver.exe");
             WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
@@ -60,6 +59,8 @@ public class TwitterBot {
             WebElement pswLogin = driver.findElement(By.cssSelector("input[class='r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-deolkf r-homxoj r-poiln3 r-7cikom r-1ny4l3l r-t60dpp r-1dz5y72 r-fdjqy7 r-13qz1uu']"));
             pswLogin.sendKeys(password, Keys.ENTER);
         do {
+            // Assign each item in the list to the string variable
+            keys = tag + "   " +list.get(count);
 
             // Click on the field to write the tweet
             driver.findElement(By.cssSelector("div[class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr']")).click();
