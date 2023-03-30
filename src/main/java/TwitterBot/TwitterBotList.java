@@ -7,23 +7,21 @@ public class TwitterBotList {
 
 static List<String> botList = new ArrayList<String>();
 
-      public static List<String> listDepo () throws InterruptedException {
+      public static List<String> messageList() throws InterruptedException {
 
-          //birebir aynı tweeti atamaya çalışırsanız Twetter bot olduğunuzu anlıyor.
-        String a = "birşeyler";
-        String b = "Başka birşeyler";
-        String c = "Daha başka birşeyler";
-        String d = "Daha da başka birşeyler";
-        String e = "Çok daha başka birşeyler";
-        String f = " Bambaşka birşeyler";
+        //If you try to tweet the same thing, Twitter will recognize you as a bot.
+        String a = "something";
+        String b = "something else";
+        String c = "something entirely different";
+        String d = "something completely different";
+        String e = "something vastly different";
+        String f = "something completely new";
         botList.add(a);
         botList.add(b);
         botList.add(c);
         botList.add(d);
         botList.add(e);
         botList.add(f);
-
-
         return botList;
     }
 }
